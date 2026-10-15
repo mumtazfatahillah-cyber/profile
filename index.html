@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.7;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      background: #111c31;
+      position: sticky;
+      top: 0;
+    }
+
+    nav h2 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .hero p:first-child {
+      color: #38bdf8;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 60px);
+      line-height: 1.2;
+      margin: 15px 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .accent {
+      color: #38bdf8;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 22px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .muted {
+      color: #cbd5e1;
+      max-width: 650px;
+    }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    .skills .card {
+      padding: 12px 20px;
+    }
+
+    .projects .card {
+      flex: 1 1 240px;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      margin-top: 10px;
+    }
+
+    .card a {
+      color: #38bdf8;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111c31;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 12px;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>MyPortfolio.</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <p>HELLO, WELCOME TO MY PORTFOLIO</p>
+    <h1>Hi, I'm <span class="accent">Nama Kamu</span></h1>
+    <h2>Informatics Engineering Student</h2>
+    <p class="muted">
+      I am an Informatics Engineering student who is
+      interested in programming, technology, and
+      artificial intelligence. Welcome to my portfolio!
+    </p>
+    <a class="button" href="#projects">Explore My Projects</a>
+  </section>
+
+  <section id="about">
+    <h2>About <span class="accent">Me</span></h2>
+    <p class="muted">
+      I am a student who enjoys learning new technologies
+      and building useful projects. I am currently
+      improving my programming skills and exploring
+      opportunities in the technology field.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My <span class="accent">Skills</span></h2>
+    <div class="skills">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">Java</div>
+      <div class="card">Python</div>
+      <div class="card">SQL</div>
+      <div class="card">Machine Learning</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My <span class="accent">Projects</span></h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>
+          Write a short description of your first
+          college or personal project here.
+        </p>
+        <a href="https://github.com/">View Project</a>
+      </div>
+
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>
+          Explain what you built, which tools you used,
+          and what you learned from the project.
+        </p>
+        <a href="https://github.com/">View Project</a>
+      </div>
+
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>
+          Add another project, assignment, or
+          application that you have developed.
+        </p>
+        <a href="https://github.com/">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in <span class="accent">Touch</span></h2>
+    <p class="muted">
+      Interested in working together or discussing
+      technology? Feel free to contact me.
+    </p>
+    <a class="button"
+       href="mailto:emailkamu@example.com">
+      Contact Me
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Nama Kamu | My Portfolio</p>
+  </footer>
+
+</body>
+</html>
